@@ -68,7 +68,9 @@ Change the serializer in the KafkaProducerConfig class:
 ```
 configProps.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
 ```
+
 The consumer will use the messageKafkaListenerContainerFactory (check it out)
+
 ---		
 Run the application using the MessagePojoConsumer Kafka listener and produce some messages using the following test class:
 ```
