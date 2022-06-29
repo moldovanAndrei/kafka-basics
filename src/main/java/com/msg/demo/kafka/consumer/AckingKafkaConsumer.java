@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AckingKafkaConsumer {
 
-//    @KafkaListener(topics = "string-topic", groupId = "ack_group_2")
+    //    @KafkaListener(topics = "string-topic", groupId = "ack_group_2")
     public void listenStringTopicByMessage(ConsumerRecord record, Acknowledgment ack) {
         System.out.println("Topic: " + record.topic() + ", Offset: " + record.offset() + " value: " + record.value());
         ack.acknowledge();
