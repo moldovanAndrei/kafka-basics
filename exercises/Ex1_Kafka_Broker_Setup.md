@@ -6,7 +6,7 @@ Official Kafka binaries can be found here:
 
 https://kafka.apache.org/downloads
 
-For todays excercises we can use Kafka 2.x.x provided in this github account:
+For todays excercises we can use Kafka 2.6.0 provided in this github account:
 
 https://github.com/moldovanAndrei/kafka-basics/tree/main/lib
 
@@ -54,8 +54,8 @@ Let's create a new topic called test-topic, first with replication factor 3, the
 
 Windows:
 ```
-> bin\windows\kafka-topics.sh --create --topic test-topic --partitions 2 --replication-factor 3 --bootstrap-server localhost:9092
-> bin\windows\kafka-topics.sh --create --topic test-topic --partitions 2 --replication-factor 1 --bootstrap-server localhost:9092
+> bin\windows\kafka-topics.bat --create --topic test-topic --partitions 2 --replication-factor 3 --bootstrap-server localhost:9092
+> bin\windows\kafka-topics.bat --create --topic test-topic --partitions 2 --replication-factor 1 --bootstrap-server localhost:9092
 ```
 
 WSL / Unix
@@ -69,8 +69,8 @@ Let's check our newly created topic:
 
 Windows:
 ```
-> bin\windows\kafka-topics.sh --list --bootstrap-server localhost:9092
-> bin\windows\kafka-topics.sh --describe --topic test-topic --bootstrap-server localhost:9092
+> bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+> bin\windows\kafka-topics.bat --describe --topic test-topic --bootstrap-server localhost:9092
 ```
 
 WSL / Unix:
@@ -84,8 +84,8 @@ And finally, let's produce and consume some simple string messages using two dif
 
 Windows:
 ```
-> bin\windows\kafka-console-consumer.sh --topic test-topic --bootstrap-server localhost:9092
-> bin\windows\kafka-console-producer.sh --topic test-topic --bootstrap-server localhost:9092
+> bin\windows\kafka-console-consumer.bat --topic test-topic --bootstrap-server localhost:9092
+> bin\windows\kafka-console-producer.bat --topic test-topic --bootstrap-server localhost:9092
 ```
 
 WSL / Unix:
