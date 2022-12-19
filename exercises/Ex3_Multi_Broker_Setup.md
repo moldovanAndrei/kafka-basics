@@ -26,7 +26,7 @@ Start Zookeeper and the three configured Kafka Servers using four different term
 ```
 
 ## Check Broker Topics
-
+#### Works only in case the Ex2_Consumer_and_Broker_Internals has also been solved. If not, the commands should return an empty output.
 ### List topics
 ```
 > bin/kafka-topics.sh --list --bootstrap-server localhost:9092
