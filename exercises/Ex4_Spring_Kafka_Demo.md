@@ -1,4 +1,4 @@
-# Ex. 3 - Spring Kafka Demo
+# Ex. 4 - Spring Kafka Demo
 First, let's have a look at the source code for the spring kafka application provided in this repository.
 
 ## Produce and Consume some simple messages
@@ -23,6 +23,9 @@ props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
 ```
 ---
 Change the consumer group and restart the application
+
+## Consumer Groups Using Simple Consumer
+TODO: Reminder, describe exercise
 
 ## Consumer Poll Batching
 
