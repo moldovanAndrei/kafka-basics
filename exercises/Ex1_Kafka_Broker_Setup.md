@@ -42,7 +42,7 @@ Open a new terminat and check that there are no topics present:
 
 Windows:
 ```
-> bin\windows\kafka-topics.bat --list --bootsrap-server localhost:9092
+> bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
 ```
 
 WSL / Unix:
